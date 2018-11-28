@@ -22,6 +22,6 @@ val = Math.min(2,33,41,55,3,-3);
 val = Math.max(2,33,41,55,3,-3);
 val = Math.random();
 
-val = Math.floor(Math.random() * 20 + 1); // very common in JS
+val = Math.floor(Math.random() * 20 + 1); // very very helpful to use in lots of code snippets 
 
 console.log(val);
