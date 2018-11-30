@@ -1,54 +1,23 @@
-// document.getElementsByClassName
+let val; 
 
-// const items = document.getElementsByClassName('collection-item');
-// console.log(items);
-// console.log(items[0]);
-// items[0].style.color = 'red';
-// items[3].textContent = 'Hello';
+const list = document.querySelector('ul.collection');
+const listItem = document.querySelector('li.collection-item:first-child');
 
-// const listItems = document.querySelector('ul').getElementsByClassName('collection-item');
+val = listItem;
+val = list;
 
-// console.log(listItems);
+val = list.childNodes;
+val = list.childNodes[0];
+val = list.childNodes[1]
 
-// document.getElementsByTagName
-// let lis = document.getElementsByTagName('li');
-// console.log(lis);
-// console.log(lis[0]);
-// lis[0].style.color = 'red';
-// lis[3].textContent = 'Hello';
+ val = list.children
+val = list.children[1];
+list.children[1].textContent = 'Hello';
 
-// // Conver HTML Collection into array
-// lis = Array.from(lis);
-
-// lis.reverse();
-
-// lis.forEach(function(li, index){
-//   console.log(li.className);
-//   li.textContent = `${index}: Hello`;
-// });
-
-// console.log(lis);
-
-// document.querySelectorAll
-const items = document.querySelectorAll('ul.collection li.collection-item');
-
-items.forEach(function(item, index){
-    item.textContent = `${index}: Hello`;
-});
-
-const liOdd = document.querySelectorAll('li:nth-child(odd)');
-const liEven = document.querySelectorAll('li:nth-child(even)');
-
-liOdd.forEach(function(li, index){
-  li.style.background = '#ccc';
-});
-
-for(let i = 0; i < liEven.length; i++){
-  liEven[i].style.background = '#f4f4f4';
-}
+val = list.children[3].children;
 
 
-console.log(items);
+val = list.firstChild;
+val = list.firstElementChild;
 
-
-
+console.log(val);
